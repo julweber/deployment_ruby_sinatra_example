@@ -5,7 +5,7 @@ require 'bundler/setup'
 require 'sinatra'
 require 'json'
 
-VERSION = 1.0
+VERSION = '1.0'
 
 get '/' do
   result = {
@@ -13,5 +13,5 @@ get '/' do
     version: VERSION,
     environment: ENV.to_h
   }
-  result.to_json
+  JSON.pretty_generate result
 end
