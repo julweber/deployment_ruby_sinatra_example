@@ -1,11 +1,17 @@
 ---
 domain: 'TODO'
+no-route: true
 
 applications:
 - name: ruby-sinatra-blue
   memory: 64M
   instances: 1
-  host: ruby-sinatra-blue
+  buildpack: ruby_buildpack
+  path: .
+  command: ruby app.rb
+- name: ruby-sinatra-green
+  memory: 64M
+  instances: 1
   buildpack: ruby_buildpack
   path: .
   command: ruby app.rb
