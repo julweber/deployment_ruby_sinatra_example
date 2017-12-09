@@ -28,23 +28,18 @@ sudo apt-get install cf-cli
 brew install cloudfoundry/tap/cf-cli
 ```
 
-# Deployment
+## CF cli help
 ```
-# cf manual
 cf help
+# cf <COMMAND> --help
+# e.g.
 cf target --help
+```
 
-API="api.example.com"
-USERNAME="user@example.com"
-PASSWORD="password"
+# Deployment
 
-ORGANIZATION="orgname"
-SPACE="spacename"
-
-cf api $API
-
-cf login -u $USER -p $PASSWORD
-
-cf target -o $ORGANIZATION -s $SPACE $TARGET
-
+Have a look at the scripts directory README file.
+```
+cd scripts
+less README.md
 ```
