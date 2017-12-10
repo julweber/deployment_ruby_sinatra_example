@@ -5,7 +5,7 @@ This application serves as an example for cf CLI training.
 # Setup & Local Run
 ```
 bundle install
-bundle exec ruby app.rb
+bundle exec ruby app.rb -o 0.0.0.0
 
 # in another console
 curl http://localhost:4567
