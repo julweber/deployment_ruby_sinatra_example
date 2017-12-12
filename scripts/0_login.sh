@@ -8,4 +8,4 @@ cf api $API
 cf login -u "$USERNAME" -p "$PASSWORD"
 
 # target the selected space
-cf target -o $ORGANIZATION -s $SPACE $TARGET
+cf target -o $ORGANIZATION -s $SPACE
