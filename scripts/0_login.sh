@@ -5,7 +5,4 @@ source "private_settings.sh"
 cf api $API
 
 # login to CF API
-cf login -u "$USERNAME" -p "$PASSWORD"
-
-# target the selected space
-cf target -o $ORGANIZATION -s $SPACE
+cf login -u "$USERNAME" -p "$PASSWORD" -o "$ORGANIZATION" -s "$SPACE"
